@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fashion Store E-Commerce Platform
 
-## Getting Started
+A modern, full-stack e-commerce platform for fashion retail built with Next.js 16, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Radix UI
+- **Animations**: Framer Motion
+- **State Management**: Zustand
+- **Database**: Prisma (ready to connect)
+- **Payments**: Stripe (ready to integrate)
+- **Authentication**: NextAuth.js
+
+## 📁 Project Structure
+
+```
+fashion-store/
+├── app/                 # Next.js App Router pages
+├── components/          # React components
+│   ├── Navbar.tsx      # Navigation bar
+│   └── ProductCard.tsx # Product display card
+├── lib/                # Utility functions
+└── public/             # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ✅ Responsive navbar with category navigation
+- ✅ Product cards with wishlist and cart functionality
+- ✅ Hero section with category showcase
+- ✅ Newsletter subscription
+- ✅ Mobile-friendly design
+- 🚧 Shopping cart (in progress)
+- 🚧 Product pages (in progress)
+- 🚧 Checkout flow (in progress)
+- 🚧 User authentication (in progress)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 18+ installed
+- npm or yarn package manager
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Install dependencies
+npm install
 
-## Deploy on Vercel
+# Run development server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Build for Production
+
+```bash
+# Create production build
+npm run build
+
+# Start production server
+npm start
+```
+
+## 📝 Environment Variables (To be configured)
+
+Create a `.env.local` file:
+
+```env
+# Database
+DATABASE_URL="your_database_url"
+
+# NextAuth
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="your_secret_key"
+
+# Stripe
+STRIPE_PUBLIC_KEY="your_stripe_public_key"
+STRIPE_SECRET_KEY="your_stripe_secret_key"
+```
+
+## 🎨 Design System
+
+- **Primary Color**: Black (#000000)
+- **Accent Color**: White (#FFFFFF)
+- **Typography**: Geist Sans & Geist Mono
+- **Breakpoints**: Mobile-first responsive design
+
+## 📦 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🚀 Deployment
+
+Deploy to Vercel (recommended for Next.js):
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+Or deploy to Railway, Netlify, or any other hosting platform that supports Next.js.
+
+## 📄 License
+
+© 2025 Fashion Store. All rights reserved.
+
+---
+
+**Note**: This is a separate project from any other applications. All configurations are independent.
